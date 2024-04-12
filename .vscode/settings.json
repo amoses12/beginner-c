@@ -1,0 +1,11 @@
+{
+  "editor.defaultFormatter": "ms-vscode.cpptools",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "clang-format.language.c.enable": true,
+  "clang-format.language.c.style": "file"
+  ,
+  "[c]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  }
+}
