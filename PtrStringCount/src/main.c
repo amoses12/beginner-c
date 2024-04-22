@@ -18,10 +18,22 @@ REQUIREMENTS:
         - one at the beginning of the string
 
 */
+int strLength(const char *str);
 
-int main() {}
-
-void strLength(const char * str)
+int main()
 {
-  
+  char string[] = "Hello World!";
+
+  printf("%d\n", strLength(string));
+  return 0;
+}
+
+int strLength(const char *str)
+{
+  const char *end = str;
+  while (*end)
+  {
+    ++end;
+  };
+  return end - str;
 }
