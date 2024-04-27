@@ -5,7 +5,6 @@
     - fgetc() to parse characters until you get EOF
     - Display as output total number of lines
     - Close file
-    - use fputc() ?
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,7 +14,7 @@ int main()
 {
   FILE *fp = NULL;
   char c;
-  int count = 0;
+  int count = 1;
 
   fp = fopen(FILENAME, "r");
 
