@@ -16,7 +16,6 @@ METHODS:
 int main()
 {
   FILE *fp = NULL;
-  char c;
   int pos;
 
   fp = fopen(FILENAME, "r");
@@ -32,11 +31,14 @@ int main()
 
   while (pos >= 0)
   {
-    c = fgetc(fp);
-    printf("%c", c);
+    printf("%c", fgetc(fp));
     pos--;
     fseek(fp, pos, SEEK_SET);
   }
+
+  printf("\n");
+  fclose(fp);
+  fp = NULL;
 
   return 0;
 }
